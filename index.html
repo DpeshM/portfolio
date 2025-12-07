@@ -1,786 +1,856 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Dipesh Mishra</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Hello, I am Dipesh from Kathmandu, Nepal. I do bunch of stuffs." />
-	<meta name="keywords" content="dipesh mishra, engineer, photographer, graphics designer, video editor" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipesh Mishra | Creative Designer & Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Dipesh Mishra - Creative Designer & Developer portfolio. Specializing in web design, development, and branding.">
+  <meta name="keywords" content="web designer, developer, portfolio, branding, web development, UI/UX design">
+  <meta name="author" content="Dipesh Mishra">
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Favicon (using a placeholder - replace with your own) -->
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/portfolio.png">
+  
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --dark-bg: #121212;
+      --light-bg: #f8f9fa;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --transition: all 0.3s ease;
+    }
 
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6681181450758801" crossorigin="anonymous"></script>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      overflow-x: hidden;
+      transition: var(--transition);
+    }
 
-	<meta property="og:title" content="Dipesh Mishra" />
-	<meta property="og:image" content="https://dipesmisra.com.np/images/xabout.jpg" />
-	<meta property="og:url" content="dipesmisra.com.np" />
-	<meta property="og:site_name" content="Dipesh Mishra" />
-	<meta property="og:description" content="Hello, I am Dipesh from Kathmandu, Nepal. I do bunch of stuffs." />
-	
-	<link rel="icon" href="images/D.png" type="image/png" sizes="16x16">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-	<link rel="stylesheet" href="css/A.animate.css%2bicomoon.css%2bbootstrap.css%2bflexslider.css%2cMcc.Sj3he148ay.css.pagespeed.cf.LNIR4uclUB.css" />
+    /* Dark Mode Styles */
+    body.dark-mode {
+      --light-bg: #121212;
+      --text-color: #f8f9fa;
+      --card-bg: #1e1e1e;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+    }
 
+    .dark-mode .bg-light {
+      background-color: #222 !important;
+    }
 
+    .dark-mode .card {
+      background-color: var(--card-bg);
+      border-color: #333;
+    }
 
+    .dark-mode .navbar {
+      background-color: rgba(0, 0, 0, 0.95) !important;
+    }
 
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.html">
+    /* Navbar */
+    .navbar {
+      transition: background 0.3s ease-in-out;
+      padding: 15px 0;
+    }
 
-	<link rel="stylesheet" href="css/A.owl.carousel.min.css%2bowl.theme.default.min.css%2bstyle.css%2cMcc.-cwn4TOmp8.css.pagespeed.cf.__dqVTb6ET.css" />
+    .navbar.scrolled {
+      background: rgba(0, 0, 0, 0.95) !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      padding: 10px 0;
+    }
 
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff !important;
+    }
 
-	<script src="js/modernizr-2.6.2.min.js"></script>
+    .nav-link {
+      font-weight: 500;
+      margin: 0 8px;
+      color: rgba(255,255,255,0.9) !important;
+      transition: var(--transition);
+    }
 
-	<!--[if lt IE 9]>
-		<script src="js/respond.min.js"></script>
-		<![endif]-->
-	<script nonce="de540209-d8fa-46c7-a379-1f469017d0c8">(function (w, d) { !function (a, e, t, r) { a.zarazData = a.zarazData || {}; a.zarazData.executed = []; a.zaraz = { deferred: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return function () { var t = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: t }) } }; for (const e of ["track", "set", "ecommerce", "debug"]) a.zaraz[e] = a.zaraz._f(e); a.zaraz.init = () => { var t = e.getElementsByTagName(r)[0], z = e.createElement(r), n = e.getElementsByTagName("title")[0]; n && (a.zarazData.t = e.getElementsByTagName("title")[0].text); a.zarazData.x = Math.random(); a.zarazData.w = a.screen.width; a.zarazData.h = a.screen.height; a.zarazData.j = a.innerHeight; a.zarazData.e = a.innerWidth; a.zarazData.l = a.location.href; a.zarazData.r = e.referrer; a.zarazData.k = a.screen.colorDepth; a.zarazData.n = e.characterSet; a.zarazData.o = (new Date).getTimezoneOffset(); a.zarazData.q = []; for (; a.zaraz.q.length;) { const e = a.zaraz.q.shift(); a.zarazData.q.push(e) } z.defer = !0; for (const e of [localStorage, sessionStorage]) Object.keys(e || {}).filter((a => a.startsWith("_zaraz_"))).forEach((t => { try { a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t)) } catch { a.zarazData["z_" + t.slice(7)] = e.getItem(t) } })); z.referrerPolicy = "origin"; z.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))); t.parentNode.insertBefore(z, t) };["complete", "interactive"].includes(e.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, 0, "script"); })(window, document);</script>
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary-color) !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), 
+                  url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1472&q=80') center/cover no-repeat,
+                  var(--dark-bg); /* Fallback color */
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero h1, .hero p, .hero-buttons {
+      animation: slideUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Cards */
+    .card {
+      transition: var(--transition);
+      border: none;
+      background-color: var(--card-bg);
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+    }
+
+    .service-card, .project-card {
+      cursor: pointer;
+    }
+
+    .skill-card {
+      transition: var(--transition);
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    /* Gallery */
+    #gallery img {
+      cursor: pointer;
+      transition: transform 0.4s ease, filter 0.3s ease;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    #gallery img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    .nav-pills .nav-link {
+      color: var(--text-color) !important;
+      margin: 0 5px;
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: var(--primary-color) !important;
+      color: white !important;
+    }
+
+    /* Contact Form */
+    .form-control {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    }
+
+    /* Social Icons */
+    .social-links a {
+      display: inline-block;
+      transition: var(--transition);
+      margin: 0 10px;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-5px);
+      color: var(--primary-color) !important;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark-bg);
+      padding: 30px 0;
+    }
+
+    /* Theme Toggle */
+    #themeToggle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+    }
+
+    /* Section Titles */
+    section h2 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    section h2:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      display: none;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    #backToTop:hover {
+      background: #0056b3;
+      transform: translateY(-3px);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero p {
+        font-size: 1.2rem;
+      }
+      
+      section {
+        padding: 60px 0 !important;
+      }
+    }
+  </style>
 </head>
 <body>
-<div id="colorlib-page">
-<div class="container-wrap">
-<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-<div class="text-center">
-<div class="author-img" style="background-image:url(images/xabout.jpg)"></div>
-<h1 id="colorlib-logo"><a href="#">Dipesh Mishra</a></h1>
-<span class="position"><a href="#"></a> Naxal, Kathmandu</span>
-</div>
-<nav id="colorlib-main-menu" role="navigation" class="navbar">
-<div id="navbar" class="collapse">
-<ul>
-<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-<li><a href="#" data-nav-section="about">About</a></li>
-<!-- <li><a href="#" data-nav-section="services">Services</a></li> -->
-<li><a href="#" data-nav-section="skills">Skills</a></li>
-<li><a href="#" data-nav-section="education">Education</a></li>
-<li><a href="#" data-nav-section="experience">Experience</a></li>
-<!-- <li><a href="#" data-nav-section="work">Work</a></li> -->
-<!--<li><a href="#" data-nav-section="blog">Blog</a></li>-->
-<li><a href="#" data-nav-section="contact">Contact</a></li>
-</ul>
-</div>
-</nav>
-<div class="colorlib-footer">
-<ul>
-	
-<li><a href="https://www.facebook.com/thedipeshmishra"target="_blank"><i class="fa fa-facebook" style= "color:cornflowerblue" > </i></a></li>
-<li><a href="https://www.instagram.com/dipeshmishra._/"target="_blank"><i class="fa fa-instagram" style="color:cornflowerblue"></i></a></li>
-<li><a href="https://www.youtube.com/c/DpeshM?sub_confirmation=1"target="_blank"><i class="fa fa-youtube-play"style="color:cornflowerblue"></i></a></li>
-<li><a href="https://www.linkedin.com/in/dipesh-mishra-86716722a/"target="_blank"><i class="fa fa-linkedin-square"style="color:cornflowerblue"></i></a></li>
-</ul>
-</div>
-</aside>
-<div id="colorlib-main">
-<section id="colorlib-hero" class="js-fullheight" data-section="home">
-<div class="flexslider js-fullheight">
-<ul class="slides">
-<li style="background-image:url(images/websitelanding.png)">
-<div class="overlay"></div>
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-<div class="slider-text-inner js-fullheight">
-<div class="desc">
-<h1>Hi! <br>I'm Dipesh</h1>
-<p><span class="typed" data-typed-items="a Data Scraper, a Full-stack Developer"></span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</section>
-<section class="colorlib-about" data-section="about">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-12">
-<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-<div class="col-md-12">
-<div class="about-desc">
-<span class="heading-meta">About Us</span>
-<h2 class="colorlib-heading">Who Am I?</h2>
-<p><strong>Hi I'm Dipesh Mishra.</strong> I live in kathmandu, i have done my studies from here i have worked in many aspects some of are mentioned below.</p>
-<p>These are the services that i can help you with.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-<div class="services color-1">
-<span class="icon2"><i class="icon-bulb"></i></span>
-<h3>Graphic Design</h3>
-</div>
-</div>
-<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-<div class="services color-2">
-<span class="icon2"><i class="icon-globe-outline"></i></span>
-<h3>Web Design</h3>
-</div>
-</div>
-<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-<div class="services color-3">
-<span class="icon2"><i class="icon-data"></i></span>
-<h3>Video Editing</h3>
-</div>
-</div>
-<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-<div class="services color-4">
-<span class="icon2"><i class="icon-phone3"></i></span>
-<h3>Event Managing</h3>
-</div>
-</div>
-</div>
-<!---<div class="row">
-<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-<div class="hire">
-<h2>I am happy to know you <br>that +10 projects done sucessfully!</h2>
-<a href="#" class="btn-hire">...</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>--
-<section class="colorlib-services" data-section="services">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-<span class="heading-meta">What I do?</span>
-<h2 class="colorlib-heading">Here are some of my expertise</h2>
-</div>
-</div>
-<div class="row row-pt-md">
-<div class="col-md-4 text-center animate-box">
-<div class="services color-1">
-<span class="icon">
-<i class="icon-bulb"></i>
-</span>
-<div class="desc">
-<h3>Innovative Ideas</h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 text-center animate-box">
-<div class="services color-2">
-<span class="icon">
-<i class="icon-data"></i>
-</span>
-<div class="desc">
-<h3>Software</h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 text-center animate-box">
-<div class="services color-3">
-<span class="icon">
-<i class="icon-phone3"></i>
-</span>
-<div class="desc">
-<h3>Application</h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 text-center animate-box">
-<div class="services color-4">
-<span class="icon">
-<i class="icon-layers2"></i>
-</span>
-<div class="desc">
-<h3>Graphic Design</h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 text-center animate-box">
-<div class="services color-5">
-<span class="icon">
-<i class="icon-data"></i>
-</span>
-<div class="desc">
-<h3>Software</h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 text-center animate-box">
-<div class="services color-6">
-<span class="icon">
-<i class="icon-phone3"></i>
-</span>
-<div class="desc">
-<h3>Application</h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-</div>
-</div>
-</div>
-</div>
-</div>--->
-<!----1</section>
-<div id="colorlib-counter" class="colorlib-counters" style="background-image:url(images/xcover_bg_1.jpg.pagespeed.ic.Hi1LCNHI9b.jpg)" data-stellar-background-ratio="0.5">
-<div class="overlay"></div>
-<div class="colorlib-narrow-content">
-<div class="row">
-</div>
-<div class="row">
-<div class="col-md-3 text-center animate-box">
-<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
-<span class="colorlib-counter-label">Cups of coffee</span>
-</div>
-<div class="col-md-3 text-center animate-box">
-<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
-<span class="colorlib-counter-label">Projects</span>
-</div>
-<div class="col-md-3 text-center animate-box">
-<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
-<span class="colorlib-counter-label">Clients</span>
-</div>
-<div class="col-md-3 text-center animate-box">
-<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
-<span class="colorlib-counter-label">Partners</span>
-</div>
-</div>
-</div>
-</div>-->
-<section class="colorlib-skills" data-section="skills">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-<span class="heading-meta">My Specialty</span>
-<h2 class="colorlib-heading animate-box">My Skills</h2>
-</div>
-</div>
-<div class="row">
-	<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-		<p>...</p>
-	</div>
-	<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-		<div class="progress-wrap">
-			<h3>Photoshop</h3>
-			<div class="progress">
-				<div class="progress-bar color-1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-					<span>75%</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-		<div class="progress-wrap">
-			<h3>Video Editing</h3>
-			<div class="progress">
-				<div class="progress-bar color-2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-					<span>60%</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-		<div class="progress-wrap">
-			<h3>HTML</h3>
-			<div class="progress">
-				<div class="progress-bar color-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-					<span>70%</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-		<div class="progress-wrap">
-			<h3>Event Manager</h3>
-			<div class="progress">
-				<div class="progress-bar color-4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-					<span>80%</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-		<div class="progress-wrap">
-			<h3>Robotics</h3>
-			<div class="progress">
-				<div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-					<span>70%</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-		<div class="progress-wrap">
-		<h3>Laptop Repair</h3>
-		<div class="progress">
-		<div class="progress-bar color-6" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-		<span>50%</span>
-		</div>
-		</div>
-	</div>
-	</div>
-</div>
-</div>
-</section>
-<section class="colorlib-education" data-section="education">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-<span class="heading-meta">Education</span>
-<h2 class="colorlib-heading animate-box">Education</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-<div class="fancy-collapse-panel">
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
-<!-- <div class="panel panel-default">
-<div class="panel-heading" role="tab" id="headingOne">
-<h4 class="panel-title">
-<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Master Degree Graphic Design
-</a>
-</h4>
-</div>
-<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-<div class="panel-body">
-<div class="row">
-<div class="col-md-6">
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-</div>
-<div class="col-md-6">
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-</div>
-</div>
-</div>
-</div>
-</div> -->
-<div class="panel panel-default">
-<div class="panel-heading" role="tab" id="headingOne">
-<h4 class="panel-title">
-<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Bachelor Degree of Electronics and Communication
-</a>
-</h4>
-</div>
-<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-<div class="panel-body">
-<p>From Advanced College of Engineering and Management <strong>Balkhu</strong></p>
-</div>
-</div>
-</div>
-<div class="panel panel-default">
-<div class="panel-heading" role="tab" id="headingThree">
-<h4 class="panel-title">
-<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">High School Secondary Education
-</a>
-</h4>
-</div>
-<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-<div class="panel-body">
-<p>Patan Nist<strong>Bakhundole</strong></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="colorlib-experience" data-section="experience">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-<span class="heading-meta">Experience</span>
-<h2 class="colorlib-heading animate-box">Work Experience</h2>
-</div>
-</div>
-<div class="row">
-	<div class="col-md-12">
-	<div class="timeline-centered">
-	<article class="timeline-entry animate-box" data-animate-effect="fadeInBottom">
-	<div class="timeline-entry-inner">
-	<div class="timeline-icon color-1">
-	<i class="icon-pen2"></i>
-	</div>
-	<div class="timeline-label">
-	<h2><a href="#">RONB EDUCATION(Currently)</a> <span>Jun 2022</span></h2>
-	<p><b>Content Manager
-	</b></p>
-	<p>Nagpokhari, Kathmandu</p>
-	</div>
-	</div>
-	</article>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-code me-2"></i>Dipesh Mishra
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-outline-light ms-3">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="timeline-centered">
-	<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-		<div class="timeline-entry-inner">
-			<div class="timeline-icon color-1">
-				<i class="icon-pen2"></i>
-			</div>
-			<div class="timeline-label">
-				<h2><a href="#">Website testing Workshop</a> <span>Feb 2022</span></h2>
-				<p><b>Hamrobazar.com
-				</b></p>
-				<p>Central Business Park</p>
-			</div>
-		</div>
-</article>
+  <!-- Hero Section -->
+  <section class="hero text-white d-flex flex-column justify-content-center align-items-center" id="home">
+    <div class="container text-center" data-aos="zoom-in">
+      <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-primary">Dipesh Mishra</span></h1>
+      <p class="lead mb-4">Creative Designer & Developer | Turning ideas into reality</p>
+      <div class="hero-buttons mt-4">
+        <a href="#contact" class="btn btn-primary btn-lg me-3">Get in Touch</a>
+        <a href="#projects" class="btn btn-outline-light btn-lg">View My Work</a>
+      </div>
+      <div class="mt-5">
+        <a href="#about" class="text-white">
+          <i class="fas fa-chevron-down fa-2x animate-bounce"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<div class="row">
-<div class="col-md-12">
-<div class="timeline-centered">
-<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-<div class="timeline-entry-inner">
-<div class="timeline-icon color-1">
-<i class="icon-pen2"></i>
-</div>
-<div class="timeline-label">
-<h2><a href="#">Customer Service representative</a> <span>Jan 2022</span></h2>
-<p><b>Hamrobazar.com
-</b></p>
-<p>Central Business Park</p>
-</div>
-</div>
-</article>
-<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-<div class="timeline-entry-inner">
-<div class="timeline-icon color-2">
-<i class="icon-pen2"></i>
-</div>
-<div class="timeline-label">
-<h2><a href="#">Sales Representative (volunteer)</a> <span>Jul 2021</span></h2>
-<p><b>Hamrobazar (AutoWorld)
-	</b></p>
-<p>Central Business Park</p>
-</div>
-</div>
-</article>
-<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-<div class="timeline-entry-inner">
-<div class="timeline-icon color-3">
-<i class="icon-pen2"></i>
-</div>
-<div class="timeline-label">
-<h2><a href="#">Media  Co-Ordinator</a> <span>Dec 2019</span></h2>
-<p> <b> Technorion Nepal </b></p> 
-<p>Kupandole, Lalitpur</p>
-</div>
-</div>
-</article>
-<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-<div class="timeline-entry-inner">
-<div class="timeline-icon color-4">
-<i class="icon-pen2"></i>
-</div>
-<div class="timeline-label">
-<h2><a href="#">Event Co-Ordinator</a>  <span>Oct 2019</span></h2>
-<p> <b> Geet aapan Gaam ke 2.0 </b></p>
-<p>  Janakpur,Nepal </p>
-</div>
-</div>
-</article>
-<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-<div class="timeline-entry-inner">
-<div class="timeline-icon color-5">
-<i class="icon-pen2"></i>
-</div>
-<div class="timeline-label">
-<h2><a href="#">Finance & Sub - Cordinator</a> <span>Nov 2018</span></h2>
-<ul>
-	Robotics and photography <span><b>Nov 1</b> </span><br>
-	Geet Aapan Gaam ke <span><b>Nov 2</b></span> <br>             
-	Science Exhibition  <span><b>Nov 3</b></span>   <br>                   
-	The Unheard Stories  <span><b>Nov 4</b></span>
-</ul>
-</div>
-</div>
-</article>
-<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-<div class="timeline-entry-inner">
-<div class="timeline-icon color-none">
-</div>
-</div>
-</article>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- <section class="colorlib-work" data-section="work">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-<span class="heading-meta">My Work</span>
-<h2 class="colorlib-heading animate-box">Recent Work</h2>
-</div>
-</div>
-<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-<div class="col-md-12">
-<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-<div class="project" style="background-image:url(images/ximg-1.jpg.pagespeed.ic.NXWhKpP6Ry.jpg)">
-<div class="desc">
-<div class="con">
-<h3><a href="work.html">Work 01</a></h3>
-<span>Website</span>
-<p class="icon">
-<span><a href="#"><i class="icon-share3"></i></a></span>
-<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-<div class="project" style="background-image:url(images/ximg-2.jpg.pagespeed.ic.R2faKrQK0R.jpg)">
-<div class="desc">
-<div class="con">
-<h3><a href="work.html">Work 02</a></h3>
-<span>Animation</span>
-<p class="icon">
-<span><a href="#"><i class="icon-share3"></i></a></span>
-<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-<div class="project" style="background-image:url(images/ximg-3.jpg.pagespeed.ic.YEI1-sA7JY.jpg)">
-<div class="desc">
-<div class="con">
-<h3><a href="work.html">Work 03</a></h3>
-<span>Illustration</span>
-<p class="icon">
-<span><a href="#"><i class="icon-share3"></i></a></span>
-<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-<div class="project" style="background-image:url(images/ximg-4.jpg.pagespeed.ic.edjgXtlANH.jpg)">
-<div class="desc">
-<div class="con">
-<h3><a href="work.html">Work 04</a></h3>
-<span>Application</span>
-<p class="icon">
-<span><a href="#"><i class="icon-share3"></i></a></span>
-<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-<div class="project" style="background-image:url(images/ximg-5.jpg.pagespeed.ic.FKpmFWV25B.jpg)">
-<div class="desc">
-<div class="con">
-<h3><a href="work.html">Work 05</a></h3>
-<span>Graphic, Logo</span>
-<p class="icon">
-<span><a href="#"><i class="icon-share3"></i></a></span>
-<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-<div class="project" style="background-image:url(images/ximg-6.jpg.pagespeed.ic.cBfXRC3uAQ.jpg)">
-<div class="desc">
-<div class="con">
-<h3><a href="work.html">Work 06</a></h3>
-<span>Web Design</span>
-<p class="icon">
-<span><a href="#"><i class="icon-share3"></i></a></span>
-<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 animate-box">
-<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-</div>
-</div>
-</div>
-</section> -->
-<!----<section class="colorlib-blog" data-section="blog">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-<span class="heading-meta">Read</span>
-<h2 class="colorlib-heading">Recent Blog</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-<div class="blog-entry">
-<a href="blog.html" class="blog-img"><img src="images/xblog-1.jpg.pagespeed.ic.N8047iZWmF.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-<div class="desc">
-<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-<h3><a href="blog.html">Renovating National Gallery</a></h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-<div class="blog-entry">
-<a href="blog.html" class="blog-img"><img src="images/xblog-2.jpg.pagespeed.ic.fGMwnAMFo5.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-<div class="desc">
-<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-<div class="blog-entry">
-<a href="blog.html" class="blog-img"><img src="images/xblog-3.jpg.pagespeed.ic.NAE1OAF-7S.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-<div class="desc">
-<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-<h3><a href="blog.html">Make website from scratch</a></h3>
-<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 animate-box">
-<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-</div>
-</div>
-</div>
-</section>-->
-<section class="colorlib-contact" data-section="contact">
-<div class="colorlib-narrow-content">
-<div class="row">
-<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-<span class="heading-meta">Get in Touch</span>
-<h2 class="colorlib-heading">Contact</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-5">
-<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-<div class="colorlib-icon">
-<i class="icon-globe-outline"></i>
-</div>
-<div class="colorlib-text">
-<p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">dpeshmisra@gmail.com</a></p>
-</div>
-</div>
-<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-<div class="colorlib-icon">
-<i class="icon-map"></i>
-</div>
-<div class="colorlib-text">
-<p>Naxal, Kathmandu</p>
-</div>
-</div>
-<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-<div class="colorlib-icon">
-<i class="icon-phone"></i>
-</div>
-<div class="colorlib-text">
-<p><a href="tel://">+977 984 419 1545</a></p>
-</div>
-</div>
-</div>
-<div class="col-md-7 col-md-push-1">
-<div class="row">
-<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-	<!-- modify this form HTML and place wherever you want your form -->
-<!-- <form action="https://formspree.io/f/xgebvkrk" method="POST">
-<div class="form-group">
-<input type="name" class="form-control" placeholder="Name">
-</div>
-<div class="form-group">
-<input type="email" class="form-control" placeholder="Email">
-</div>
-<div class="form-group">
-<input type="subject" class="form-control" placeholder="Subject">
-</div>
-<div class="form-group">
-<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-</div>
-<div class="form-group">
-<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-</div>
-</form> -->
-<form
-  action="https://formspree.io/f/xgebvkrk"method="POST">
-  <div class="form-group">
-	<label>
-		<input type="Name" class="form-control" name="name" placeholder="Name">
-	  </label>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" 
+               class="img-fluid rounded shadow" alt="Dipesh Mishra">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="text-center text-lg-start">About Me</h2>
+          <p class="mt-3">I'm a passionate designer and developer with over 3 years of experience creating meaningful experiences through design and technology. I specialize in modern, responsive websites and brand identities that deliver both aesthetic appeal and functional excellence.</p>
+          <p>My approach combines creative thinking with technical expertise to develop solutions that are not only visually compelling but also user-friendly and performance-optimized.</p>
+          <a href="DipeshMishra_Resume.pdf" class="btn btn-primary mt-3" download>
+            <i class="fas fa-download me-2"></i>Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Skills & Technologies</h2>
+      <p class="mb-5">I work with a wide range of technologies and tools to bring ideas to life</p>
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-6 mb-4" data-aos="fade-up">
+          <div class="card p-4 border-0 shadow-sm skill-card">
+            <i class="fab fa-html5 fa-3x mb-3 text-primary"></i>
+            <h5>Frontend</h5>
+            <p>HTML5, CSS3, JavaScript, React</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card p-4 border-0 shadow-sm skill-card">
+            <i class="fab fa-node-js fa-3x mb-3 text-success"></i>
+            <h5>Backend</h5>
+            <p>Node.js, Express, MongoDB</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card p-4 border-0 shadow-sm skill-card">
+            <i class="fas fa-paint-brush fa-3x mb-3 text-warning"></i>
+            <h5>Design</h5>
+            <p>UI/UX, Figma, Adobe Creative Suite</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card p-4 border-0 shadow-sm skill-card">
+            <i class="fas fa-tools fa-3x mb-3 text-info"></i>
+            <h5>Tools</h5>
+            <p>Git, Bootstrap, Webpack, VS Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Services</h2>
+      <p class="text-center mb-5">I offer a range of services to help bring your digital vision to life</p>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4" data-aos="flip-left">
+          <div class="card p-4 border-0 shadow-sm service-card" data-bs-toggle="modal" data-bs-target="#serviceModal1">
+            <div class="text-center mb-3">
+              <i class="fas fa-laptop-code fa-3x text-primary"></i>
+            </div>
+            <h5 class="text-center">Web Design</h5>
+            <p class="text-center">Modern and responsive website designs that look great on any device.</p>
+            <div class="text-center mt-3">
+              <span class="badge bg-primary">UI/UX</span>
+              <span class="badge bg-secondary">Responsive</span>
+              <span class="badge bg-info">Figma</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="flip-up">
+          <div class="card p-4 border-0 shadow-sm service-card" data-bs-toggle="modal" data-bs-target="#serviceModal2">
+            <div class="text-center mb-3">
+              <i class="fas fa-code fa-3x text-success"></i>
+            </div>
+            <h5 class="text-center">Development</h5>
+            <p class="text-center">Clean and efficient code bringing your ideas to life with functionality.</p>
+            <div class="text-center mt-3">
+              <span class="badge bg-success">JavaScript</span>
+              <span class="badge bg-warning">React</span>
+              <span class="badge bg-danger">Node.js</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="flip-right">
+          <div class="card p-4 border-0 shadow-sm service-card" data-bs-toggle="modal" data-bs-target="#serviceModal3">
+            <div class="text-center mb-3">
+              <i class="fas fa-palette fa-3x text-warning"></i>
+            </div>
+            <h5 class="text-center">Branding</h5>
+            <p class="text-center">Creating strong visual identities that reflect your brand's personality.</p>
+            <div class="text-center mt-3">
+              <span class="badge bg-dark">Logo Design</span>
+              <span class="badge bg-secondary">Typography</span>
+              <span class="badge bg-info">Brand Guidelines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Projects</h2>
+      <p class="text-center mb-5">Here are some of my recent projects</p>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="card p-3 border-0 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+            <div class="project-img mb-3">
+              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" 
+                   class="img-fluid rounded" alt="Portfolio Project">
+            </div>
+            <h5>Portfolio Website</h5>
+            <p>Designed and built a personal portfolio to showcase my work.</p>
+            <div class="d-flex justify-content-between mt-3">
+              <span class="text-primary">Web Design</span>
+              <span class="text-muted">Completed: Jan 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card p-3 border-0 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+            <div class="project-img mb-3">
+              <img src="https://images.unsplash.com/photo-1567446537711-4303c89d0610?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" 
+                   class="img-fluid rounded" alt="Branding Project">
+            </div>
+            <h5>Company Branding</h5>
+            <p>Created a full visual identity system for a startup brand.</p>
+            <div class="d-flex justify-content-between mt-3">
+              <span class="text-primary">Branding</span>
+              <span class="text-muted">Completed: Dec 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card p-3 border-0 shadow-sm project-card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+            <div class="project-img mb-3">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1415&q=80" 
+                   class="img-fluid rounded" alt="Redesign Project">
+            </div>
+            <h5>Responsive Redesign</h5>
+            <p>Revamped an existing site for better UX and mobile performance.</p>
+            <div class="d-flex justify-content-between mt-3">
+              <span class="text-primary">Web Development</span>
+              <span class="text-muted">Completed: Nov 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Modals -->
+  <div class="modal fade" id="serviceModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Web Design</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>I design modern, user-friendly websites optimized for performance and aesthetic appeal. Each layout adapts seamlessly to screens of all sizes, ensuring a great experience for every visitor.</p>
+          <ul>
+            <li>Responsive Design</li>
+            <li>UI/UX Prototyping</li>
+            <li>Wireframing</li>
+            <li>Accessibility Compliance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-	<label>
-		<input type="Email" class="form-control" name="email" placeholder="Email">
-	  </label>
+
+  <div class="modal fade" id="serviceModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Development</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>I build scalable, maintainable, and fast websites using the latest technologies, ensuring your platform runs smoothly with the best user experience.</p>
+          <ul>
+            <li>Frontend Development (HTML, CSS, JavaScript, React)</li>
+            <li>Backend Development (Node.js, Express)</li>
+            <li>Database Integration</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-	<label>
-		<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Your Message"></textarea>
-	  </label>
-	  <!-- your other form fields go here -->
-	  <button type="submit"class="btn btn-primary btn-send-message">Send</button>
+
+  <div class="modal fade" id="serviceModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Branding</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>I craft visual identities that resonate with your target audience, ensuring brand consistency across digital and print materials.</p>
+          <ul>
+            <li>Logo Design</li>
+            <li>Color Palette Development</li>
+            <li>Typography Selection</li>
+            <li>Brand Guidelines</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+  <!-- Project Modals -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Portfolio Website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>This project highlights my personal brand and skillset through a sleek, responsive portfolio. Designed using Bootstrap, AOS, and custom animations, it demonstrates my attention to detail and UI/UX sensibility.</p>
+          <p><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript, Bootstrap 5, AOS Library</p>
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" class="img-fluid rounded mt-3" alt="Portfolio Project Screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script src="js/jquery.easing.1.3.js%2bbootstrap.min.js%2bjquery.waypoints.min.js%2bjquery.flexslider-min.js.pagespeed.jc.ypszPGiKrB.js"></script><script>eval(mod_pagespeed_DMtCOhRI$8);</script>
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Company Branding</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Developed a unique brand identity, including logo design, typography, and digital assets for a startup. The design ensures consistent visual language across digital and print platforms.</p>
+          <p><strong>Tools Used:</strong> Adobe Illustrator, Photoshop, Figma</p>
+          <img src="https://images.unsplash.com/photo-1567446537711-4303c89d0610?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" class="img-fluid rounded mt-3" alt="Branding Project Screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script>eval(mod_pagespeed_5FoFS8hzQs);</script>
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Responsive Redesign</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>This redesign improved mobile performance, accessibility, and overall UX for an existing website, achieving a 40% faster load time and higher engagement metrics.</p>
+          <p><strong>Technologies Used:</strong> React, CSS Grid, Performance Optimization Tools</p>
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1415&q=80" class="img-fluid rounded mt-3" alt="Responsive Redesign Screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script>eval(mod_pagespeed_zxWiKzenpV);</script>
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Event Gallery</h2>
+      <p class="text-center mt-3 mb-5">Browse images from various events categorized by name</p>
+      <ul class="nav nav-pills justify-content-center mb-4" id="galleryTabs">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#event1">College Events</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#event2">Corporate Events</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#event3">Sports Event</button></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="event1">
+          <div class="row g-3">
+            <div class="col-md-4" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="College Event Image 1">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="College Event Image 2">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+              <img src="https://images.unsplash.com/photo-1524178234883-043d5c3f3cf4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="College Event Image 3">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="event2">
+          <div class="row g-3">
+            <div class="col-md-4" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="Corporate Event Image 1">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1476&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="Corporate Event Image 2">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=1469&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="Corporate Event Image 3">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="event3">
+          <div class="row g-3">
+            <div class="col-md-4" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="Sports Event Image 1">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1490&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="Sports Event Image 2">
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1577223625818-75bc1f2ac0e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                   class="img-fluid rounded shadow-sm" alt="Sports Event Image 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>eval(mod_pagespeed_3VV3SdTttZ);</script>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Get In Touch</h2>
+      <p class="text-center mb-5">Interested in working together? Let's connect!</p>
+      <div class="row mt-5">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <h4 class="mb-4">Contact Information</h4>
+          <ul class="list-unstyled">
+            <li class="mb-4">
+              <i class="fas fa-envelope fa-lg me-3 text-primary"></i>
+              <a href="mailto:dipeshmishra@example.com" class="text-decoration-none">dipeshmishra@example.com</a>
+            </li>
+            <li class="mb-4">
+              <i class="fas fa-phone fa-lg me-3 text-primary"></i>
+              <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567-890</a>
+            </li>
+            <li class="mb-4">
+              <i class="fas fa-map-marker-alt fa-lg me-3 text-primary"></i>
+              <span>New Delhi, India</span>
+            </li>
+            <li>
+              <div class="social-links mt-4">
+                <a href="https://github.com/dipeshmishra" target="_blank" class="text-dark me-4">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com/in/dipeshmishra" target="_blank" class="text-dark me-4">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/dipeshmishra" target="_blank" class="text-dark me-4">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://instagram.com/dipeshmishra" target="_blank" class="text-dark">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="js/owl.carousel.min.js%2bjquery.countTo.js%2bmain.js.pagespeed.jc.Jy5HeFmhgV.js"></script><script>eval(mod_pagespeed_o9wd50kRIS);</script>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <div class="social-links mb-3">
+        <a href="https://github.com/dipeshmishra" target="_blank" class="text-white me-4">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/dipeshmishra" target="_blank" class="text-white me-4">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/dipeshmishra" target="_blank" class="text-white me-4">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://instagram.com/dipeshmishra" target="_blank" class="text-white">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+      <p>&copy; <span id="year"></span> Dipesh Mishra. All rights reserved.</p>
+      <p class="text-muted">Designed & Developed with <i class="fas fa-heart text-danger"></i> by Dipesh Mishra</p>
+    </div>
+  </footer>
 
-<script>eval(mod_pagespeed_36JYMA6VkX);</script>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-primary">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-<script>eval(mod_pagespeed_d7RBuNVHpz);</script>
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+      
+      // Back to top button
+      const backToTop = document.getElementById('backToTop');
+      backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
 
-  gtag('config', 'UA-23581568-13');
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"736f35f84b8c790d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          window.scrollTo({
+            top: target.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Highlight active section in navbar
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(window.scrollY >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if(link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      themeToggle.innerHTML = document.body.classList.contains('dark-mode') 
+        ? '<i class="fas fa-sun"></i>' 
+        : '<i class="fas fa-moon"></i>';
+      
+      // Save preference to localStorage
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+
+    // Load saved theme preference
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      // Simple validation
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      // In a real application, you would send this data to a server
+      // For demonstration, we'll just show a success message
+      alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
+      
+      // Reset form
+      this.reset();
+    });
+
+    // Back to top functionality
+    document.getElementById('backToTop').addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Gallery image click to enlarge (basic implementation)
+    document.querySelectorAll('#gallery img').forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = new bootstrap.Modal(document.createElement('div'));
+        // In a real implementation, you would create a modal to show the enlarged image
+        alert('Click on gallery tabs to view different event categories.');
+      });
+    });
+  </script>
 </body>
-
 </html>
