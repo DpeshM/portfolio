@@ -1,1 +1,5 @@
-dpeshm.github.io
+$ dig WWW.dipesmisra.com.np +nostats +nocomments +nocmd
+> ;dipesmisra.com.np.                    IN      A
+> WWW.dipesmisra.com.np.             3592    IN      CNAME   dpeshm.github.io.
+> dpeshm.github.io.      43192   IN      CNAME   GITHUB-PAGES-SERVER .
+> GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
